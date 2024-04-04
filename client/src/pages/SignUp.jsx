@@ -44,7 +44,7 @@ const SignUp = () => {
 
 
   return (
-    <div className="min-h-screen mt-20">
+    <div className="h-[60vh] mt-20">
       <div className="flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5">
 
         <div className="flex-1">
@@ -68,7 +68,7 @@ const SignUp = () => {
             </div>
             <div>
               <Label value="Your Password" className="font-semibold" />
-              <TextInput type="password" placeholder="Password" id="password" onChange={handleChange} />
+              <TextInput type="password" placeholder="********" id="password" onChange={handleChange} />
             </div>
 
             <Button gradientDuoTone='purpleToPink' type="submit" disabled={loading}>
@@ -76,7 +76,7 @@ const SignUp = () => {
                 <>
                   <Spinner size='sm' />
                   <span className="pl-3">Loading...</span>
-                </>) : ("Sign UP")
+                </>) : ("Sign Up")
               }
             </Button>            
           </form>
