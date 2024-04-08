@@ -15,7 +15,6 @@ mongoose.connect(process.env.MONGO)
         })
 
 const app = express();
-
 app.use(express.json());
 
 app.listen(3000, () => {
@@ -33,6 +32,6 @@ app.use((err, req, res, next) => {
     res.status(statusCode).json({
         success: false,
         statusCode,
-        message
+        message,
     });
 });
